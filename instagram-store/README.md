@@ -1,4 +1,4 @@
-# Instagram-Based Thrift & Handmade Store — Database Design
+# Instagram Thrift Creator Store Database Design
 
 ## Context
 
