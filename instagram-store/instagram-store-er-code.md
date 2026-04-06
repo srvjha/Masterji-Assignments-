@@ -34,6 +34,7 @@ customer_details[icon:user, color: Red]{
   instagram_username VARCHAR(255) UNIQUE
   address TEXT
   created_at DATETIME NOT NULL
+  updated_at DATETIME
 }
 
 orders[icon:gcp-billing, color: Purple]{
@@ -49,6 +50,7 @@ orders[icon:gcp-billing, color: Purple]{
   order_delivery_estimated_date DATETIME
   order_delivered_date DATETIME
   created_at DATETIME NOT NULL
+  updated_at DATETIME
 }
 
 order_items[icon:receipt, color: Orange]{
@@ -58,6 +60,7 @@ order_items[icon:receipt, color: Orange]{
   quantity INT NOT NULL CHECK(quantity > 0)
   price_at_time DECIMAL(10,2) NOT NULL
   created_at DATETIME NOT NULL
+  updated_at DATETIME
 }
 
 payments[icon:payment, color: Black]{
@@ -68,6 +71,7 @@ payments[icon:payment, color: Black]{
   payment_status ENUM("PENDING","PAID","FAILED") NOT NULL
   transaction_ref VARCHAR(255)
   created_at DATETIME NOT NULL
+  updated_at DATETIME
 }
 
 shipping[icon:ship, color: Green]{
@@ -79,6 +83,7 @@ shipping[icon:ship, color: Green]{
   shipped_at DATETIME
   delivered_at DATETIME
   created_at DATETIME NOT NULL
+  updated_at DATETIME
 }
 
 
